@@ -1,10 +1,10 @@
 /***** Google Fonts*****/
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .hello{
-    background-color: #52ac55;
+    background-color: #08690b;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 1rem;
+    padding: 0rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -87,6 +87,90 @@ button.white {
 body {
     width: 100%;
 }
+/* for teammate section  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Exo;
+  }
+  @font-face {
+    font-family: Exo;
+    src: url(./fonts/Exo2.0-Medium.otf);
+  }
+  .main{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0c5db9; */
+  }
+  .profile-card{
+    position: relative;
+    font-family: sans-serif;
+    width: 220px;
+    height: 220px;
+    background: #f7f5f5;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin: 0 25px;
+  }
+  .profile-card:hover{
+    border-radius: 10px;
+    height: 260px;
+  }
+  .profile-card .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 99;
+  }
+  .profile-card:hover .img{
+    transform: translateY(-60px);
+  }
+  .img img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px rgba(210, 210, 210, 0.4);
+    transition: .6s;
+  }
+  .profile-card:hover img{
+    border-radius: 10px;
+  }
+  .caption{
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+  }
+  .profile-card:hover .caption{
+    opacity: 1;
+  }
+  .caption h3{
+    font-size: 21px;
+    font-family: sans-serif;
+  }
+  .caption p{
+    font-size: 15px;
+    color: #af1541;
+    font-family: sans-serif;
+    margin: 2px 0 9px 0;
+  }
+  .caption .social-links a{
+    color: #231f1f;
+    margin-right: 15px;
+    font-size: 21px;
+    transition: .6s;
+  }
+  .social-links a:hover{
+    color: #0c52a1;
+  }
+
+  /* end of teammate section   */
 
 /* For Sidebar  */
 
@@ -131,6 +215,7 @@ body {
    
 }
 
+
 /* Header Start */
 header
 {
@@ -149,7 +234,7 @@ header
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 20px 50px;
     background: #E3E6F3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
@@ -604,8 +689,120 @@ footer .follow i:hover,
 footer a:hover {
     color: #05e74d;
 }
+/* sign in sign up  */
 
+.body-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+.contents .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contents .logo p {
+  font-weight: 600;
+  font-size: 32px;
+}
+.container {
+  width: max-content;
+  /* background-color: rgb(237, 255, 206); */
+  padding: 48px 176px 48px 5px;
+  border-radius: 32px;
+}
+
+.container .registration-table , .container .login-table {
+  background-color: rgba(156, 255, 255, 0.05);
+}
+.container .text {
+  display: flex;
+  justify-content: center;
+}
+
+/* .container .logo {
+  margin-bottom: 8px;
+} */
+
+.container label {
+  color: #fff2d8;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+td {
+  padding: 16px;
+  /* background-color: bisque; */
+  text-align: left;
+}
+
+input {
+  border: 1px solid;
+  /* border-color: rgb(142, 155, 121); */
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.button {
+  padding: 8px 132px;
+}
+
+#name-error,
+#PhoneNumber-error,
+#E-mail-error,
+#password-error {
+  display: none;
+  color: red;
+}
+
+.main-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 12px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.image img {
+  border-radius: 10px;
+  width: 840px;
+}
+
+.register-now-text, .login-now-text {
+  color: #e9d574;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+   text-decoration: underline;
+   font-weight: 600;
+}
+
+a:active{
+    color: black;
+}
 
 

@@ -291,7 +291,7 @@ header
 /* Home Page */
 
 #hero {
-    background-image: URL("../img/top-view-fresh-vegetables-with-copy-space.jpg");
+    background-image: URL("img/top-view-fresh-vegetables-with-copy-space.jpg");
     height: 90vh;
     width: 100%;
     background-size: cover;
